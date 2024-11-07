@@ -1,0 +1,39 @@
+---
+external help file: sharepointonline.xml
+Module Name: Microsoft.Online.SharePoint.PowerShell
+online version: https://learn.microsoft.com/powershell/module/sharepoint-online/SPOAdminControl
+applicable: SharePoint Online
+title: Get-SPOContainer
+schema: 2.0.0
+author: swathiiruvanti
+ms.author: swathi iruvanti
+ms.reviewer:
+---
+# Add-SPO Admin Contol to enable and disable Copilot Agents in SharePoint promotional usage. 
+
+## SYNOPSIS
+
+Description:
+SPOCopilot PromoPacksCmdLets - Get & Set
+
+The following CmdLets have been implemented in this change:
+
+Get-SPOCopilotPromoOptInStatus - Fetches the CoPilotPromoInfo from the CrossGeoTenantStore and returns the Opt-In status information
+
+Set-SPOCopilotPromoOptInStatus - Takes as input the parameter IsCopilotPromoStatusEnabled ( "true/false" ) state of the Copilot promo opt-in bit and stores the information in the CrossGeoTenantStore.
+
+Parameters:
+
+
+<data name="SPOCopilotPromoOptInStatusEnabled" xml:space="preserve">
+    <value>Copilot promo opt in status : Enabled</value>
+    <comment>[Tag:SharePoint-ThrottlingAndMonetization-CopilotPromoPacks] Success message shown to user when commandlet returns a positive flag from Tenant store</comment>
+  </data>
+  <data name="Get- SPOCopilotPromoOptInStatusError" xml:space="preserve">
+    <value>Error retrieving Copilot promo status</value>
+    <comment>[Tag:SharePoint-ThrottlingAndMonetization-CopilotPromoPacks] Success message shown to user when commandlet returns a negative flag from Tenant store</comment>
+  </data>
+  <data name="Set- SPOCopilotPromoOptInStatusError" xml:space="preserve">
+    <value>Error saving Copilot promo status</value>
+    <comment>[Tag:SharePoint-ThrottlingAndMonetization-CopilotPromoPacks] Error message shown to user when commandlet fails to execute for Set-CopilotPromoPacksOptInStatus</comment>
+  </data>
