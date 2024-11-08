@@ -22,47 +22,37 @@ Set-SPOCopilotPromoOptInStatus
 
 ### Parameters:
 
-The values for this parameter are:
-
-- True
-  
-- False
-
 The following details are returned:
 
-- Copilot promo status set successfully
+- Copilot promo status set successfully, returns nothing if successful. 
 
-- Error saving Copilot promo Status
+- Copilot promo status set failed, returns an error. 
 
 ## DESCRIPTION
 
-The `Set-SPOCopilotPromoOptInStatus` cmdlet stores the opt-in state.
+The `Set-SPOCopilotPromoOptInStatus` cmdlet stores the opt-in state. The user must be a SharePoint Admin to run the cmlets.
+
 
 ## EXAMPLES
 
 ### Example 1
 
 ```powershell
-SPOCopilotPromoOptInStatusSetSuccessfully - SPOCopilotPromoOptInStatusEnabled
+Set-SPOCopilotPromoOptInStatusSetSuccessfully -SPOCopilotPromoOptInStatusEnabled true
 ```
 
-Example 1: Success message shown to user when commandlet executes successfully for Set-CopilotPromoOptInStatus
+Example 1: No success message returned, can validate by executing Get-SPOCopilotPromoOptInStatus.
+If commandlet fails to execute for Set-CopilotPromoOptInStatus, an error message is shown to user.
 
 ### Example 2
 
 ```powershell
-SPOCopilotPromoOptInStatusSetSuccessfully - SPOCopilotPromoOptInStatusDisabled
+Set-SPOCopilotPromoOptInStatusSetSuccessfully -SPOCopilotPromoOptInStatusDisabled false
 ```
 
 Example 2: Success message shown to user when commandlet executes successfully for Set-CopilotPromoOptInStatus
+If commandlet fails to execute for Set-CopilotPromoOptInStatus, an error message is shown to user.
 
-### Example 3
-
-```powershell
-SPOCopilotPromoOptInStatusError 
-```
-
-Example 3: Error message shown to user when commandlet fails to execute for Set-CopilotPromoOptInStatus
 
 ## RELATED LINKS
 
