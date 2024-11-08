@@ -46,7 +46,7 @@ Example 2: Success message shown to user when commandlet returns a negative flag
 
 ## RELATED LINKS
 
-Set-SPOCopilotPromoOptInStatus
+Set-SPOCopilotPromoOptInStatus 
 
 
 
