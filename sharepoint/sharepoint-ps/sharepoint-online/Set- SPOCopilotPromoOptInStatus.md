@@ -43,20 +43,26 @@ The `Set-SPOCopilotPromoOptInStatus` cmdlet stores the opt-in state.
 ### Example 1
 
 ```powershell
-<data name="SPOCopilotPromoOptInStatusError" xml:space="preserve">
-    <value>Error saving Copilot promo Status</value>
+SPOCopilotPromoOptInStatusSetSuccessfully - SPOCopilotPromoOptInStatusEnabled
 ```
 
-Example 1: Error message shown to user when commandlet fails to execute for Set-CopilotPromoOptInStatus
+Example 1: Success message shown to user when commandlet executes successfully for Set-CopilotPromoOptInStatus
 
 ### Example 2
 
 ```powershell
-<data name="SPOCopilotPromoOptInStatusSetSuccessfully" xml:space="preserve">
-    <value>Copilot promo status set successfully</value>
+SPOCopilotPromoOptInStatusSetSuccessfully - SPOCopilotPromoOptInStatusDisabled
 ```
 
 Example 2: Success message shown to user when commandlet executes successfully for Set-CopilotPromoOptInStatus
+
+### Example 3
+
+```powershell
+SPOCopilotPromoOptInStatusError 
+```
+
+Example 3: Error message shown to user when commandlet fails to execute for Set-CopilotPromoOptInStatus
 
 ## RELATED LINKS
 
