@@ -35,7 +35,7 @@ The `Get-SPOCopilotPromoOptInStatus` cmdlet retrieves and returns the opt-in Cop
 ### Example 1
 
 ```powershell
-SPOCopilotPromoOptInStatusEnabled -true
+Get-SPOCopilotPromoOptInStatusEnabled -true
 ```
 
 Example 1: Success message shown to user when commandlet returns a positive flag from Tenant store
@@ -43,7 +43,7 @@ Example 1: Success message shown to user when commandlet returns a positive flag
 ### Example 2
 
 ```powershell
-SPOCopilotPromoOptInStatusDisabled -False
+Get-SPOCopilotPromoOptInStatusDisabled -False
 ```
 
 Example 2: Success message shown to user when commandlet returns a negative flag from Tenant store
