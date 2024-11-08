@@ -28,7 +28,7 @@ Get-SPOCopilotPromoOptInStatus
 
 ## DESCRIPTION
 
-The `Get-SPOCopilotPromoOptInStatus` cmdlet retrieves and returns the opt-in Copilot promo status. 
+The `Get-SPOCopilotPromoOptInStatus` cmdlet retrieves and returns the opt-in Copilot promo status. The user must be a SharePoint Admin to run the cmlets.
 
 ## EXAMPLES
 
@@ -39,6 +39,14 @@ SPOCopilotPromoOptInStatusEnabled -true
 ```
 
 Example 1: Success message shown to user when commandlet returns a positive flag from Tenant store
+
+### Example 2
+
+```powershell
+SPOCopilotPromoOptInStatusDisabled -False
+```
+
+Example 2: Success message shown to user when commandlet returns a negative flag from Tenant store
 
 ## RELATED LINKS
 
