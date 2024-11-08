@@ -13,18 +13,12 @@ ms.reviewer:
 
 ## SYNOPSIS
 
-Returns the Opt-In Copilot promo status 
+Returns the true or false Opt-In Copilot promo status 
 
 ## SYNTAX
 ```powershell
 Get-SPOCopilotPromoOptInStatus
 ```
-
-### Parameters:
-
-- True
-  
-- False
 
 ## DESCRIPTION
 
@@ -35,7 +29,8 @@ The `Get-SPOCopilotPromoOptInStatus` cmdlet retrieves and returns the opt-in Cop
 ### Example 1
 
 ```powershell
-Get-SPOCopilotPromoOptInStatusEnabled -true
+Get-SPOCopilotPromoOptInStatusEnabled
+-true
 ```
 
 Example 1: Success message shown to user when commandlet returns a positive flag from Tenant store
@@ -43,7 +38,8 @@ Example 1: Success message shown to user when commandlet returns a positive flag
 ### Example 2
 
 ```powershell
-Get-SPOCopilotPromoOptInStatusDisabled -False
+Get-SPOCopilotPromoOptInStatusDisabled
+-False
 ```
 
 Example 2: Success message shown to user when commandlet returns a negative flag from Tenant store
