@@ -22,18 +22,9 @@ Get-SPOCopilotPromoOptInStatus
 
 ### Parameters:
 
-The values for this parameter are:
-
 - True
   
 - False
-
-The following details are returned:
-
-- Enabled
-
-- Disabled
-
 
 ## DESCRIPTION
 
@@ -44,8 +35,7 @@ The `Get-SPOCopilotPromoOptInStatus` cmdlet retrieves and returns the opt-in Cop
 ### Example 1
 
 ```powershell
-<data name="SPOCopilotPromoOptInStatusEnabled" xml:space="preserve">
-    <value>Copilot promo opt in status : Enabled</value>
+SPOCopilotPromoOptInStatusEnabled -true
 ```
 
 Example 1: Success message shown to user when commandlet returns a positive flag from Tenant store
@@ -53,8 +43,7 @@ Example 1: Success message shown to user when commandlet returns a positive flag
 ### Example 2
 
 ```powershell
- <data name="SPOCopilotPromoOptInStatusDisabled" xml:space="preserve">
-    <value>Copilot promo opt in status : Disabled</value>
+SPOCopilotPromoOptInStatusDisabled -false
 ```
 
 Example 2: Success message shown to user when commandlet returns a negative flag from Tenant store
