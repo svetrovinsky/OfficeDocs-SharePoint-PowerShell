@@ -44,7 +44,7 @@ The `Get-SPOCopilotPromoOptInStatus` cmdlet retrieves and returns the opt-in Cop
 ### Example 1
 
 ```powershell
-<data name="CopilotPromoPacksOptInStatusEnabled" xml:space="preserve">
+<data name="SPOCopilotPromoOptInStatusEnabled" xml:space="preserve">
     <value>Copilot promo opt in status : Enabled</value>
 ```
 
@@ -53,8 +53,8 @@ Example 1: Success message shown to user when commandlet returns a positive flag
 ### Example 2
 
 ```powershell
- <data name="CopilotPromoPacksOptInStatusDisabled" xml:space="preserve">
-    <value>Copilot promo packs opt in status : Disabled</value>
+ <data name="SPOCopilotPromoOptInStatusDisabled" xml:space="preserve">
+    <value>Copilot promo opt in status : Disabled</value>
 ```
 
 Example 2: Success message shown to user when commandlet returns a negative flag from Tenant store
